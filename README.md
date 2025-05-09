@@ -28,8 +28,7 @@ Storage: JSON file-based storage for users and posts
 
 # 🚀 How to run locally
 1. Clone the repository:
-git clone https://github.com/yourusername/blog-web-app.git
-
+git clone https://github.com/amrutavarma2/BlogMix/
 cd (to your repository)
 
 3. Install dependencies:
