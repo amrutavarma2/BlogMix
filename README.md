@@ -2,7 +2,7 @@
 A dynamic blog platform built using HTML, CSS, JavaScript, Node.js, Express.js, and EJS, allowing users to securely sign up or log in to create, view, search, and manage blog posts in a user-friendly environment.
 
 
-# Features
+## Features
 🔐 User Authentication: Secure login and registration functionality using session-based authentication.
 
 ✍️ Blog Creation: Authenticated users can write and publish blog posts, which are automatically organized by author.
@@ -18,7 +18,7 @@ A dynamic blog platform built using HTML, CSS, JavaScript, Node.js, Express.js, 
 🎨 Responsive Design – Styled for both desktop and mobile views
 
 
-# 🛠️Tech Stack
+## Tech Stack
 Frontend: HTML, CSS, JavaScript, EJS (Embedded JavaScript templating)
 
 Backend: Node.js, Express.js
@@ -26,7 +26,7 @@ Backend: Node.js, Express.js
 Storage: JSON file-based storage for users and posts
 
 
-# 🚀 How to run locally
+## How to run locally
 1. Clone the repository:
 git clone https://github.com/amrutavarma2/BlogMix/
 cd (to your repository)
