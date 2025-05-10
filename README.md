@@ -28,8 +28,7 @@ Storage: JSON file-based storage for users and posts
 
 ## How to run locally
 1. Clone the repository:
-git clone https://github.com/amrutavarma2/BlogMix/
-cd (to your repository)
+       git clone https://github.com/amrutavarma2/BlogMix/  
 
 3. Install dependencies:
 npm install
