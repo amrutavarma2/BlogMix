@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Web Application</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BlogMix</div>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="./works.html">How It Works</a>
+      <a href="./features.html">Features</a>
+      <a href="./FAQ.html">FAQ</a>
+    </nav>
+    <button class="get-started">Get Started</button>
+  </header>
+
+  <main class="hero">
+    <div class="hero-image">
+      <img src="Images/blog.jpg" alt="Team working" />
+    </div>
+    <div class="hero-text">
+      <h1>Unleash Your <span>Blogging</span> Potential with Us</h1>
+      <p>BlogMix is your gateway to effortless blogging. Create, share, and connect with a vibrant community. Start your blogging journey today and express your unique voice.</p>
+      
+      <% if (message) { %>
+        <p style="color: red;"><%= message %></p>
+      <% } %>
+      
+      <div class="email-signup">
+        <form action="/blog" method="GET">
+          <label>Email:</label>
+          <input type="email" name="email" required><br>
+          <label>Password:</label>
+          <input type="password" name="password" required><br>
+          <button type="submit">Get Started</button>
+      </div>
+      
+      <small>By signing up, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</small>
+    </div>
+  </main>
+</body>
+
+<div class="emoji-wrapper">
+    <span>🌿</span>
+    <span>☁️</span>
+    <span>🍃</span>
+    <span>✨</span>
+    <span>🌼</span>
+  </div>
+  
+</html>

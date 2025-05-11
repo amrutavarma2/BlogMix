@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Web Application</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BlogMix</div>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="./works.html">How It Works</a>
+      <a href="./features.html">Features</a>
+      <a href="./FAQ.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-image">
+      <img src="Images/blog.jpg" alt="Team working" />
+    </div>
+    <div class="hero-text">
+      <h1>Unleash Your <span>Blogging</span> Potential with Us</h1>
+      <p>BlogMix is your gateway to effortless blogging. Create, share, and connect with a vibrant community. Start your blogging journey today and express your unique voice.</p>
+      
+      <div class="email-signup">
+        <form action="/signup" method="POST" class="email-signup">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <input type="password" id="password" name="password" placeholder="Enter your password" style="display: none;" required>
+          <button type="submit" id="signupBtn" style="display: none;">Sign up</button>
+        </form>
+      </div>
+      <small>By signing up, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</small>
+    </div>
+  </main>
+
+
+<div class="emoji-wrapper">
+    <span>🌿</span>
+    <span>☁️</span>
+    <span>🍃</span>
+    <span>✨</span>
+    <span>🌼</span>
+  </div>
+
+  <script>
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const signupBtn = document.getElementById('signupBtn');
+
+    emailInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        passwordInput.style.display = 'block';
+        signupBtn.style.display = 'inline-block';
+        passwordInput.focus();
+      }
+    });
+  </script>
+
+</body>  
+</html>

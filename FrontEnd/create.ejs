@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Blog - BlogMix</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BlogMix</div>
+    <nav>
+      <a href="/search">Explore</a>
+    </nav>
+  </header>
+
+  <main class="create-blog">
+    <h1>Create a New Blog</h1>
+    <form action="/create" method="POST" class="blog-form">
+      <input type="text" name="title" placeholder="Blog Title" required>
+      <input type="text" name="author" placeholder="Author Name" required>
+      <textarea name="content" rows="10" placeholder="Write your blog here..." required></textarea>
+      <button type="submit">Publish</button>
+    </form>
+  </main>
+</body>
+</html>
