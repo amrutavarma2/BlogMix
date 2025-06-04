@@ -106,7 +106,7 @@ app.post("/create", (req, res) => {
   const { title, author, content } = req.body;
   const authorEmail = req.session.user;
 
-  if (!title || !author || !content || !authorEmail) {
+  if (!title || !author || !content) {
     return res.status(400).send("All fields are required.");
   }
 
@@ -114,7 +114,6 @@ app.post("/create", (req, res) => {
     id: Date.now(),
     title,
     author,
-    authorEmail,
     content
   };
 
